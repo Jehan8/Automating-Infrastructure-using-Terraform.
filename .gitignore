@@ -1,57 +1,43 @@
-target
-work
-
-# IntelliJ project files 
-*.iml
-*.iws
-*.ipr
-.idea
-out
-
-# eclipse project file
-.settings
-.classpath
-.project
-build
-
-# VSCode workspace file
-*.code-workspace
-.vscode
-
-# vim
-*~
-*.swp
-
-# ctags
-tags
-
-# OS X
+*.dll
+*.exe
 .DS_Store
+example.tf
+.terraform.lock.hcl
+.terraform.tfstate.lock.info
+terraform.tfplan
+terraform.tfstate
+bin/
+dist/
+modules-dev/
+/pkg/
+website/.vagrant
+website/.bundle
+website/build
+website/node_modules
+.vagrant/
+*.backup
+./*.tfstate
+.terraform/
+*.log
+*.bak
+*~
+.*.swp
+.idea
+.vscode
+*.iml
+*.test
+*.iml
+log.txt
+markdown-link-check*.txt
+changelog.tmp
+terraform-provider-aws
+aws/testdata/service/cloudformation/examplecompany-exampleservice-exampleresource/bin/handler
 
-# mvn versions:set
-pom.xml.versionsBackup
+# Test exclusions
+!command/test-fixtures/**/*.tfstate
+!command/test-fixtures/**/.terraform/
 
-war/images/16x16
-war/images/24x24
-war/images/32x32
-war/images/48x48
-jenkins.war
-RPMS
-SRPMS
-debian/binary
-debian/debian/jenkins
-debian/debian/jenkins.substvars
-debian/debian/files
-debian/build-stamp
-debian/configure-stamp
-*.debhelper
-*.debhelper.log
-jenkins_*.build
-jenkins_*.changes
-*.deb
-*.pkg
-push-build.sh
-war/node_modules/
-war/yarn-error.log
-.java-version
-plugins/
+# Keep windows files with windows line endings
+*.winfile eol=crlf
+/.vs
+node_modules
